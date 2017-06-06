@@ -1,0 +1,22 @@
+@media (max-width: 860px) and (min-width: 1px){
+	body{
+		font-family: 'PT Sans Narrow', sans-serif;
+	}
+
+	.menu ul li a{
+	text-decoration: none;
+	color: #fff;
+	padding: 20px 40px;
+	border-right: 1px solid white;
+	background-color: #df6e6f;
+	cursor: pointer;
+	}
+	.menu ul li a:hover{
+	background-color: #FBE6C0;
+	color: #df6e6f;
+}
+}
+
+@media (min-width: 861px){
+
+}
