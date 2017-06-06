@@ -1,22 +1,66 @@
-@media (max-width: 860px) and (min-width: 1px){
+@media (max-width: 650px) and (min-width: 1px){
 	body{
 		font-family: 'PT Sans Narrow', sans-serif;
+		font-weight: 700;
 	}
-
+	#mobile{
+		background-color: grey;
+		padding: 20px;
+		width: 100%;
+		text-decoration: none;
+		font-weight: 700;
+		font-size: 25px;
+		color: #fff;
+	}
+	#mobile i{
+		margin-right: 20px;
+	}
+	.menu{
+		flex-direction: column;
+	}
+	.menu ul{
+		flex-direction: column;
+	}
+	.menu ul li{
+		background-color: grey;
+		padding: 20px;
+		border-bottom: 1px solid white;
+	}
 	.menu ul li a{
-	text-decoration: none;
-	color: #fff;
-	padding: 20px 40px;
-	border-right: 1px solid white;
-	background-color: #df6e6f;
-	cursor: pointer;
+		text-decoration: none;
+		color: #fff;
+		cursor: pointer;
 	}
 	.menu ul li a:hover{
-	background-color: #FBE6C0;
-	color: #df6e6f;
-}
+		background-color: #FBE6C0;
+		color: #df6e6f;
+	}
+	.show{
+		display: none;
+	}
 }
 
-@media (min-width: 861px){
-
+@media (min-width: 651px){
+	#mobile{
+		display: none;
+	}
+	.menu, .menu ul, .menu ul li{
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	.menu ul{
+		background-color: #df6e6f;
+		justify-content: center;
+	}
+	.menu ul li{
+		padding: 20px 40px;
+		border-right: 1px solid white;
+		background-color: #df6e6f;
+	}
+	.menu ul li a{
+		text-decoration: none;
+		color: #fff;
+		cursor: pointer;
+		text-align: center;
+	}
 }
